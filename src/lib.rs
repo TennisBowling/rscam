@@ -243,6 +243,7 @@ enum State {
     Aborted,
 }
 
+#[derive(Clone)]
 pub struct Camera {
     fd: RawFd,
     state: State,
